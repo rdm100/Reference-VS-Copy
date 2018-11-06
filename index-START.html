@@ -25,6 +25,18 @@
     // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
     // So, how do we fix this? We take a copy instead!
+    const players2 = players.slice();
+
+    const players3 = [].concat(players);
+
+    const player4 = (...players);
+
+    const players5 = players.map(player => player);
+    console.log(players5);
+
+    const player6 = Array.from(players);
+
+    const player7 = clone(players);
 
     // one way
 
